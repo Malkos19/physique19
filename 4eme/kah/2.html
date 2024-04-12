@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>صفحة فرعية</title>
+    <style>
+        /* إزالة هامش الصفحة */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* تمنع التمرير */
+        }
+
+        /* إظهار الـ embed بحجم الشاشة بالكامل */
+        embed {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: 5px solid rgba(255, 255, 255, 0.5); /* لون أبيض مع شفافية 50% */
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+    <embed src="2.swf" 
+           quality="high" 
+           pluginspage="https://get.adobe.com/fr/flashplayer/" 
+           type="application/x-shockwave-flash" 
+           width="100%" 
+           height="100%">
+    </embed>
+</body>   
+</html>
